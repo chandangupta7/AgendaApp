@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8439C8AA2094732E00A7B050 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439C8A92094732E00A7B050 /* UIView.swift */; };
+		8439C8AC2094737800A7B050 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439C8AB2094737800A7B050 /* String.swift */; };
+		8439C8AE2094788300A7B050 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439C8AD2094788300A7B050 /* UITextField.swift */; };
+		8439C8B020947A3600A7B050 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439C8AF20947A3600A7B050 /* UIColor.swift */; };
+		8439C8B2209483A600A7B050 /* DraftViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439C8B1209483A600A7B050 /* DraftViewControllerExt.swift */; };
 		8456EAF8209370F200A5CF7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456EAF7209370F200A5CF7C /* AppDelegate.swift */; };
 		8456EAFA209370F200A5CF7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456EAF9209370F200A5CF7C /* ViewController.swift */; };
 		8456EAFD209370F200A5CF7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8456EAFB209370F200A5CF7C /* Main.storyboard */; };
@@ -14,6 +19,7 @@
 		8456EB02209370F300A5CF7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8456EB01209370F300A5CF7C /* Assets.xcassets */; };
 		8456EB05209370F300A5CF7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8456EB03209370F300A5CF7C /* LaunchScreen.storyboard */; };
 		8456EB10209370F300A5CF7C /* AgendaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456EB0F209370F300A5CF7C /* AgendaAppTests.swift */; };
+		8456EB1F209443EE00A5CF7C /* DraftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456EB1E209443EE00A5CF7C /* DraftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8439C8A92094732E00A7B050 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		8439C8AB2094737800A7B050 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		8439C8AD2094788300A7B050 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		8439C8AF20947A3600A7B050 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		8439C8B1209483A600A7B050 /* DraftViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftViewControllerExt.swift; sourceTree = "<group>"; };
 		8456EAF4209370F200A5CF7C /* AgendaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8456EAF7209370F200A5CF7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8456EAF9209370F200A5CF7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +49,7 @@
 		8456EB0B209370F300A5CF7C /* AgendaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8456EB0F209370F300A5CF7C /* AgendaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaAppTests.swift; sourceTree = "<group>"; };
 		8456EB11209370F300A5CF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8456EB1E209443EE00A5CF7C /* DraftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8439C8A82094731500A7B050 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				8439C8A92094732E00A7B050 /* UIView.swift */,
+				8439C8AB2094737800A7B050 /* String.swift */,
+				8439C8AD2094788300A7B050 /* UITextField.swift */,
+				8439C8AF20947A3600A7B050 /* UIColor.swift */,
+				8439C8B1209483A600A7B050 /* DraftViewControllerExt.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
 		8456EAEB209370F200A5CF7C = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +103,11 @@
 		8456EAF6209370F200A5CF7C /* AgendaApp */ = {
 			isa = PBXGroup;
 			children = (
-				8456EAF7209370F200A5CF7C /* AppDelegate.swift */,
-				8456EAF9209370F200A5CF7C /* ViewController.swift */,
-				8456EAFB209370F200A5CF7C /* Main.storyboard */,
-				8456EB01209370F300A5CF7C /* Assets.xcassets */,
-				8456EB03209370F300A5CF7C /* LaunchScreen.storyboard */,
+				8439C8A82094731500A7B050 /* Extentions */,
+				8456EB1B2094437A00A5CF7C /* Model */,
+				8456EB1A2094436F00A5CF7C /* View */,
+				8456EB1C2094438100A5CF7C /* Controller */,
+				8456EB1D209443AB00A5CF7C /* Supporting Files */,
 				8456EB06209370F300A5CF7C /* Info.plist */,
 				8456EAFE209370F200A5CF7C /* AgendaApp.xcdatamodeld */,
 			);
@@ -97,6 +121,40 @@
 				8456EB11209370F300A5CF7C /* Info.plist */,
 			);
 			path = AgendaAppTests;
+			sourceTree = "<group>";
+		};
+		8456EB1A2094436F00A5CF7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8456EB03209370F300A5CF7C /* LaunchScreen.storyboard */,
+				8456EAFB209370F200A5CF7C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8456EB1B2094437A00A5CF7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8456EB1C2094438100A5CF7C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8456EAF9209370F200A5CF7C /* ViewController.swift */,
+				8456EB1E209443EE00A5CF7C /* DraftViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8456EB1D209443AB00A5CF7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8456EAF7209370F200A5CF7C /* AppDelegate.swift */,
+				8456EB01209370F300A5CF7C /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +258,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8439C8AC2094737800A7B050 /* String.swift in Sources */,
+				8439C8B2209483A600A7B050 /* DraftViewControllerExt.swift in Sources */,
+				8439C8AA2094732E00A7B050 /* UIView.swift in Sources */,
+				8439C8AE2094788300A7B050 /* UITextField.swift in Sources */,
+				8456EB1F209443EE00A5CF7C /* DraftViewController.swift in Sources */,
 				8456EB00209370F200A5CF7C /* AgendaApp.xcdatamodeld in Sources */,
+				8439C8B020947A3600A7B050 /* UIColor.swift in Sources */,
 				8456EAFA209370F200A5CF7C /* ViewController.swift in Sources */,
 				8456EAF8209370F200A5CF7C /* AppDelegate.swift in Sources */,
 			);
