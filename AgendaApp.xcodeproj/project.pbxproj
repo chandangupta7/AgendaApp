@@ -12,6 +12,8 @@
 		8439C8AE2094788300A7B050 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439C8AD2094788300A7B050 /* UITextField.swift */; };
 		8439C8B020947A3600A7B050 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439C8AF20947A3600A7B050 /* UIColor.swift */; };
 		8439C8B2209483A600A7B050 /* DraftViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439C8B1209483A600A7B050 /* DraftViewControllerExt.swift */; };
+		8439C8CD2094A9B000A7B050 /* Items+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439C8CB2094A9B000A7B050 /* Items+CoreDataClass.swift */; };
+		8439C8CE2094A9B000A7B050 /* Items+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439C8CC2094A9B000A7B050 /* Items+CoreDataProperties.swift */; };
 		8456EAF8209370F200A5CF7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456EAF7209370F200A5CF7C /* AppDelegate.swift */; };
 		8456EAFA209370F200A5CF7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456EAF9209370F200A5CF7C /* ViewController.swift */; };
 		8456EAFD209370F200A5CF7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8456EAFB209370F200A5CF7C /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 		8439C8AD2094788300A7B050 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		8439C8AF20947A3600A7B050 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		8439C8B1209483A600A7B050 /* DraftViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftViewControllerExt.swift; sourceTree = "<group>"; };
+		8439C8CB2094A9B000A7B050 /* Items+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Items+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8439C8CC2094A9B000A7B050 /* Items+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Items+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8456EAF4209370F200A5CF7C /* AgendaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8456EAF7209370F200A5CF7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8456EAF9209370F200A5CF7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 		8456EB1B2094437A00A5CF7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8439C8CB2094A9B000A7B050 /* Items+CoreDataClass.swift */,
+				8439C8CC2094A9B000A7B050 /* Items+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,8 +270,10 @@
 				8439C8AE2094788300A7B050 /* UITextField.swift in Sources */,
 				8456EB1F209443EE00A5CF7C /* DraftViewController.swift in Sources */,
 				8456EB00209370F200A5CF7C /* AgendaApp.xcdatamodeld in Sources */,
+				8439C8CD2094A9B000A7B050 /* Items+CoreDataClass.swift in Sources */,
 				8439C8B020947A3600A7B050 /* UIColor.swift in Sources */,
 				8456EAFA209370F200A5CF7C /* ViewController.swift in Sources */,
+				8439C8CE2094A9B000A7B050 /* Items+CoreDataProperties.swift in Sources */,
 				8456EAF8209370F200A5CF7C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,11 +21,12 @@ class DraftViewController: UIViewController {
     @IBOutlet weak var txtField: UITextField!
     @IBOutlet weak var lblAgenda: UILabel!
     @IBOutlet weak var lblTimeDuration: UILabel!
-    
+    @IBOutlet weak var timePicker: UIDatePicker!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // Add observer for keyboard appear.
         NotificationCenter.default.addObserver(self, selector: #selector(DraftViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(DraftViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
@@ -34,13 +35,13 @@ class DraftViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self)
-        //navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "DRAFT"
+        
         
         // Get main screen bounds
         let screenSize: CGRect = UIScreen.main.bounds
@@ -50,12 +51,15 @@ class DraftViewController: UIViewController {
         
         self.view.layoutIfNeeded()
         
+        // set textField placeholder color, tint color, becomeFirstResonder
         txtField.setPlaceHolderTextColor(UIColor(hex: "#ffbe3e"))
         txtField.tintColor = UIColor(hex: "#ffbe3e")
         self.txtField.becomeFirstResponder()
         
         // To hide keyboard on touch anywhere
         self.hideKeyboard()
+        
+        timePicker.isHidden = true
 
     }
 
@@ -77,6 +81,12 @@ class DraftViewController: UIViewController {
     // Button action add new
     @IBAction func actionAddNew(_ sender: Any) {
         showErrorAlertWithTitle("Under Construction", message: "It will add new agenda.")
+    }
+
+    // Action Time picker
+    @IBAction func datePickerChanged(_ sender: Any) {
+        print(timePicker.date)
+        
     }
 }
 

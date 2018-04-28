@@ -18,7 +18,6 @@ extension DraftViewController : UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
-        //self.checkValueExist()
         return false
     }
 
@@ -30,7 +29,6 @@ extension DraftViewController {
     @objc func keyboardWillShow(notification: NSNotification) {
         
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            //self.mainContainerView.frame.origin.y -= keyboardSize.height
             print("botom space \(mainContainerBottomContrant.constant)")
             mainContainerBottomContrant.constant = keyboardSize.height
             self.view.layoutIfNeeded()

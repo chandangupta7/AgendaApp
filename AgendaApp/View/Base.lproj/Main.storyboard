@@ -170,6 +170,16 @@
                                             <constraint firstItem="lAy-dI-sPn" firstAttribute="leading" secondItem="otl-FC-8xM" secondAttribute="leading" id="nKB-h2-F1B"/>
                                         </constraints>
                                     </scrollView>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="VWQ-iy-oZp">
+                                        <rect key="frame" x="0.0" y="337" width="375" height="216"/>
+                                        <color key="tintColor" red="1" green="0.83780812819999995" blue="0.41733852449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="546608753.44231606">
+                                            <!--2018-04-28 11:45:53 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="datePickerChanged:" destination="p0x-WO-owL" eventType="valueChanged" id="AQs-Po-Stp"/>
+                                        </connections>
+                                    </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYC-z8-3Nt">
                                         <rect key="frame" x="0.0" y="553" width="375" height="50"/>
                                         <color key="backgroundColor" red="1" green="0.83780812819999995" blue="0.41733852449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -188,8 +198,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="otl-FC-8xM" firstAttribute="leading" secondItem="Kz5-Ae-JrO" secondAttribute="leading" id="77r-gb-Plz"/>
+                                    <constraint firstItem="XYC-z8-3Nt" firstAttribute="top" secondItem="VWQ-iy-oZp" secondAttribute="bottom" id="7bi-08-Kwj"/>
+                                    <constraint firstItem="VWQ-iy-oZp" firstAttribute="leading" secondItem="Kz5-Ae-JrO" secondAttribute="leading" id="En1-e2-VdW"/>
                                     <constraint firstAttribute="bottom" secondItem="XYC-z8-3Nt" secondAttribute="bottom" id="GNh-8g-zTW"/>
                                     <constraint firstItem="XYC-z8-3Nt" firstAttribute="leading" secondItem="Kz5-Ae-JrO" secondAttribute="leading" id="Hhq-r0-dlm"/>
+                                    <constraint firstAttribute="trailing" secondItem="VWQ-iy-oZp" secondAttribute="trailing" id="MSH-2m-A0h"/>
                                     <constraint firstAttribute="trailing" secondItem="otl-FC-8xM" secondAttribute="trailing" id="gsc-an-0yp"/>
                                     <constraint firstItem="otl-FC-8xM" firstAttribute="top" secondItem="Kz5-Ae-JrO" secondAttribute="top" id="nAI-Vo-l3w"/>
                                     <constraint firstItem="XYC-z8-3Nt" firstAttribute="top" secondItem="otl-FC-8xM" secondAttribute="bottom" id="rwQ-BC-i1l"/>
@@ -216,6 +229,7 @@
                         <outlet property="scrView" destination="otl-FC-8xM" id="8kJ-XL-2fR"/>
                         <outlet property="subContainerHeightContrant" destination="NCD-yn-06t" id="q7l-uU-Qvg"/>
                         <outlet property="subContainerWidthContrant" destination="5Cj-Tc-siQ" id="fBX-Rl-K5s"/>
+                        <outlet property="timePicker" destination="VWQ-iy-oZp" id="xz8-gc-ag9"/>
                         <outlet property="txtField" destination="7gT-gq-Mie" id="qXj-sP-sfi"/>
                     </connections>
                 </viewController>
